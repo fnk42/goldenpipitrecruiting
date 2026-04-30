@@ -91,7 +91,7 @@ section{padding:88px 32px}
 .diff-card h3{font-size:16px;font-weight:700;color:var(--dark);margin-bottom:10px;line-height:1.3}
 .diff-card p{font-size:13.5px;color:var(--muted);line-height:1.7}
 
-/* FOUNDER */
+/* FOUNDER + TEAM */
 .founder-section{background:var(--bg);padding:88px 32px}
 .founder-grid{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start}
 .founder-img-card{background:var(--bg3);border:1px solid var(--border2);border-radius:16px;overflow:hidden}
@@ -101,6 +101,16 @@ section{padding:88px 32px}
 .founder-stat{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:16px 20px;text-align:center}
 .founder-stat-num{font-size:24px;font-weight:800;color:var(--gold)}
 .founder-stat-label{font-size:11px;color:var(--muted);font-weight:600;margin-top:4px}
+
+/* JUNIOR TEAM */
+.team-section{background:var(--bg2);padding:0 32px 88px}
+.junior-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1080px;margin:0 auto}
+.junior-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;display:flex;gap:20px;align-items:flex-start;transition:box-shadow .25s,border-color .25s}
+.junior-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.07);border-color:var(--gold-mid)}
+.junior-img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--gold-mid)}
+.junior-role{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.junior-name{font-size:16px;font-weight:700;color:var(--dark);margin-bottom:8px}
+.junior-card p{font-size:13px;color:var(--muted);line-height:1.7}
 
 /* HOW IT WORKS */
 .how{background:var(--bg)}
@@ -114,6 +124,23 @@ section{padding:88px 32px}
 /* SOCIAL PROOF */
 .social-proof{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:40px 32px}
 
+/* FRACTIONAL MID-PAGE */
+.fractional-mid{background:var(--navy);padding:88px 32px;position:relative;overflow:hidden}
+.fractional-mid::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
+.fractional-mid::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold)}
+.frac-mid-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.frac-mid-left .section-label{color:var(--gold)}
+.frac-mid-left h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1.15;margin-bottom:16px}
+.frac-mid-left p{font-size:16px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:28px}
+.frac-mid-cta{display:inline-block;background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:var(--r);font-size:14px;font-weight:700;transition:opacity .2s}
+.frac-mid-cta:hover{opacity:0.88}
+.frac-mid-cards{display:flex;flex-direction:column;gap:14px}
+.frac-mid-card{background:rgba(255,255,255,.06);border:1px solid rgba(245,166,35,.18);border-radius:12px;padding:20px 22px;display:flex;gap:16px;align-items:flex-start;transition:border-color .2s,background .2s}
+.frac-mid-card:hover{border-color:rgba(245,166,35,.4);background:rgba(255,255,255,.09)}
+.frac-mid-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.frac-mid-card h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.frac-mid-card p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;margin:0}
+
 /* TESTIMONIALS */
 .testimonials{background:var(--navy);padding:88px 32px}
 .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:880px;margin:48px auto 0}
@@ -124,20 +151,11 @@ section{padding:88px 32px}
 .testi-quote::before{content:'✦ ';color:var(--gold);font-style:normal;font-size:10px}
 .testi-person{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(255,255,255,.08);padding-top:20px}
 .featured .testi-person{border-top:none;padding-top:0;flex-direction:column;align-items:flex-start}
-.testi-av{width:44px;height:44px;border-radius:50%;background:var(--gold-light);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--gold-dark);flex-shrink:0}
-.featured .testi-av{width:64px;height:64px;font-size:18px}
+.testi-av{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid rgba(245,166,35,.4)}
+.featured .testi-av{width:64px;height:64px}
 .testi-name{font-size:13px;font-weight:700;color:#fff}
 .testi-role{font-size:11px;color:rgba(255,255,255,.45);margin-top:2px}
 .featured-divider{width:2px;background:rgba(245,166,35,.3);align-self:stretch}
-
-/* FRACTIONAL TEASER */
-.fractional-teaser{background:var(--bg);border-top:1px solid var(--border);padding:48px 32px;text-align:center}
-.frac-pill{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:16px;border:1px solid rgba(245,166,35,.2)}
-.fractional-teaser h3{font-size:22px;font-weight:800;color:var(--dark);margin-bottom:8px}
-.fractional-teaser p{font-size:14px;color:var(--muted);max-width:480px;margin:0 auto 20px;line-height:1.7}
-.coming-soon-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold-light);color:var(--gold-dark);font-size:12px;font-weight:700;padding:8px 20px;border-radius:100px;border:1px solid var(--gold-mid)}
-.coming-soon-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 1.5s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
 /* CTA */
 .cta-section{background:var(--bg2);text-align:center;padding:88px 32px}
@@ -154,12 +172,17 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
 .footer-links a:hover{color:rgba(255,255,255,.9)}
 .footer-copy{font-size:12px;color:rgba(255,255,255,.3)}
 
+/* COMING SOON */
+.coming-soon-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold-light);color:var(--gold-dark);font-size:12px;font-weight:700;padding:8px 20px;border-radius:100px;border:1px solid var(--gold-mid)}
+.coming-soon-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
 @media(max-width:768px){
   nav{padding:0 20px}
   .nav-right .nav-link{display:none}
   section{padding:60px 20px}
   .hero{padding:72px 20px 64px}
-  .problem .container,.services-grid,.diff-grid,.testi-grid,.founder-grid{grid-template-columns:1fr}
+  .problem .container,.services-grid,.diff-grid,.testi-grid,.founder-grid,.frac-mid-inner{grid-template-columns:1fr}
   .testi-card.featured{grid-column:1;display:flex;flex-direction:column}
   .featured-divider{display:none}
   .steps{grid-template-columns:1fr 1fr}
@@ -167,6 +190,8 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   .trust-inner{gap:24px}
   .footer-inner{flex-direction:column;text-align:center}
   .founder-stats{justify-content:center}
+  .junior-grid{grid-template-columns:1fr}
+  .team-section{padding:0 20px 60px}
 }
 </style>
 </head>
@@ -322,6 +347,9 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
 <!-- FOUNDER -->
 <section class="founder-section" id="about">
   <div class="container">
+    <div class="section-label">Our Team</div>
+    <h2 class="section-title">Built on real markets.<br/>Proven across continents.</h2>
+    <p class="section-sub" style="margin-bottom:48px">We are a boutique search firm. Every engagement gets senior attention from day one — you work directly with the people who built this practice, not handed off to a coordinator.</p>
     <div class="founder-grid">
       <div class="founder-img-card">
         <img src="images/njenga.jpg" alt="Njenga Koimburi"/>
@@ -332,9 +360,6 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
         </div>
       </div>
       <div style="padding-top:8px">
-        <div class="section-label">About</div>
-        <h2 class="section-title">Built on real markets.<br/>Proven across continents.</h2>
-        <div class="gold-rule"></div>
         <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:20px">Njenga founded Golden Pipit Recruiting after building a search practice that spans some of the world's most demanding hiring markets. He has sourced and placed talent across <strong style="color:var(--dark)">Latin America, East Africa, Europe, and Asia</strong> — working directly with founders, CEOs, and boards to meet their most critical people needs.</p>
         <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:20px">His client list spans the full spectrum of company maturity — from early-stage startups finding their first senior hires, to growth-stage companies scaling rapidly across new markets, to established regional and multinational firms replacing key leadership. What stays constant is the approach: rigorous, relationship-led, and anchored in a genuine understanding of what each business actually needs.</p>
         <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:32px">Njenga has a particular edge in cross-border search — identifying talent in markets where most recruiters don't operate, and navigating the cultural and commercial nuances that make international placements succeed. His network is not a database. It is a living set of relationships built over years of active search on multiple continents.</p>
@@ -348,6 +373,28 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
     </div>
   </div>
 </section>
+
+<!-- TEAM — JOEY & DICKSON -->
+<div class="team-section">
+  <div class="junior-grid">
+    <div class="junior-card">
+      <img src="images/joey.jpg" alt="Joseph Wambugu" class="junior-img"/>
+      <div>
+        <div class="junior-role">Recruiter</div>
+        <div class="junior-name">Joseph Wambugu</div>
+        <p>Joey manages candidate sourcing, screening, and coordination across active searches. With hands-on experience reviewing hundreds of applications and running structured interview processes, he knows what separates a strong candidate from the right one — and moves fast without cutting corners.</p>
+      </div>
+    </div>
+    <div class="junior-card">
+      <img src="images/dickson.jpg" alt="Dickson Zaqueu" class="junior-img"/>
+      <div>
+        <div class="junior-role">Recruiter</div>
+        <div class="junior-name">Dickson Zaqueu</div>
+        <p>Dickson brings precision and candidate care to every search he works on. Experienced in sourcing, outreach, and candidate communication, he ensures every shortlisted candidate has been genuinely assessed — not just matched on paper. His attention to detail means the clients receive shortlists they can trust.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- HOW IT WORKS -->
 <section class="how" id="how">
@@ -380,6 +427,51 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   </div>
 </section>
 
+<!-- FRACTIONAL MID-PAGE -->
+<section class="fractional-mid" id="fractional">
+  <div class="frac-mid-inner">
+    <div class="frac-mid-left">
+      <div class="section-label">GP Fractional</div>
+      <h2>Need senior expertise without a full-time hire?</h2>
+      <p>Sometimes a permanent hire isn't the right answer. GP Fractional gives you access to senior professionals — CFOs, COOs, advisors — on a flexible, part-time basis. The expertise your business needs, at the hours you actually require.</p>
+      <a href="https://gpfractional.com" target="_blank" class="frac-mid-cta">Explore GP Fractional →</a>
+      <div style="margin-top:16px">
+        <a href="mailto:info@goldenpipitrecruiting.com?subject=GP Fractional Enquiry" class="coming-soon-badge">Launching June 2026 — notify me</a>
+      </div>
+    </div>
+    <div class="frac-mid-cards">
+      <div class="frac-mid-card">
+        <div class="frac-mid-icon">💼</div>
+        <div>
+          <h4>Fractional CFO</h4>
+          <p>Senior financial leadership for organisations that need CFO-level thinking without the full-time cost.</p>
+        </div>
+      </div>
+      <div class="frac-mid-card">
+        <div class="frac-mid-icon">⚙️</div>
+        <div>
+          <h4>Fractional COO</h4>
+          <p>Operational leadership and process architecture for scaling businesses — flexible engagement basis.</p>
+        </div>
+      </div>
+      <div class="frac-mid-card">
+        <div class="frac-mid-icon">🎯</div>
+        <div>
+          <h4>Senior Advisors</h4>
+          <p>Strategic counsel for boards and leadership teams navigating growth, change, or transition.</p>
+        </div>
+      </div>
+      <div class="frac-mid-card">
+        <div class="frac-mid-icon">📊</div>
+        <div>
+          <h4>Fractional CMO</h4>
+          <p>Marketing leadership and go-to-market strategy on a flexible basis — for organisations building commercial capability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="testimonials" id="testimonials">
   <div class="container">
@@ -392,7 +484,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
         </div>
         <div class="featured-divider"></div>
         <div style="display:flex;flex-direction:column;justify-content:center;gap:16px">
-          <div class="testi-av" style="width:64px;height:64px;font-size:18px">NP</div>
+          <img src="images/norbert.jpg" alt="Norbert Pap" class="testi-av" style="width:64px;height:64px"/>
           <div>
             <div class="testi-name" style="font-size:16px">Norbert Pap</div>
             <div class="testi-role" style="font-size:13px">CTO, Gratia</div>
@@ -403,7 +495,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <div class="testi-card">
         <div class="testi-quote">✦ Working with Njenga has been a genuinely positive experience. He acts as an extension of the startups I've supported and represents each company in a thoughtful, professional way. Candidates often mention that their conversations with him are informative and welcoming.</div>
         <div class="testi-person">
-          <div class="testi-av">BK</div>
+          <img src="images/brandon.jpg" alt="Brandon Kronitz" class="testi-av"/>
           <div>
             <div class="testi-name">Brandon Kronitz</div>
             <div class="testi-role">Startup Advisor</div>
@@ -413,7 +505,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <div class="testi-card">
         <div class="testi-quote">✦ Incredibly well organized and communicative. Njenga kept us informed at every stage and delivered candidates who were genuinely well-matched to what we needed. One of the best recruiting experiences I've had.</div>
         <div class="testi-person">
-          <div class="testi-av">IK</div>
+          <img src="images/ian.jpg" alt="Ian Krohn" class="testi-av"/>
           <div>
             <div class="testi-name">Ian Krohn</div>
             <div class="testi-role">Partner, ThirdWay Partners</div>
@@ -423,7 +515,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <div class="testi-card">
         <div class="testi-quote">✦ Njenga brings a rare combination of strategic thinking and genuine follow-through. Our collaboration has been characterised by discretion, professionalism, and a shared commitment to outcomes that go beyond the transactional. Exactly the kind of partner you want in complex, high-stakes work.</div>
         <div class="testi-person">
-          <div class="testi-av">FW</div>
+          <img src="images/flo.jpg" alt="Florence Wanyoike" class="testi-av"/>
           <div>
             <div class="testi-name">Florence Wanyoike</div>
             <div class="testi-role">Board Member, Windle</div>
@@ -432,33 +524,6 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       </div>
     </div>
   </div>
-</section>
-
-<!-- ECOSYSTEM BANNER -->
-<section style="background:var(--bg3);border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);padding:20px 32px">
-  <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
-    <div style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Also from Golden Pipit</div>
-    <div style="display:flex;gap:24px;flex-wrap:wrap">
-      <a href="https://goldenpipitcareers.com" style="display:flex;flex-direction:column;gap:2px;padding:10px 20px;background:#fff;border:1px solid var(--border);border-radius:8px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
-        <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold)">In transition?</span>
-        <span style="font-size:13px;font-weight:700;color:var(--dark)">Golden Pipit Careers →</span>
-        <span style="font-size:11px;color:var(--muted)">CV & LinkedIn optimisation</span>
-      </a>
-      <a href="https://gpfractional.com" style="display:flex;flex-direction:column;gap:2px;padding:10px 20px;background:#fff;border:1px solid var(--border);border-radius:8px;transition:border-color .2s" onmouseover="this.style.borderColor='var(--gold)'" onmouseout="this.style.borderColor='var(--border)'">
-        <span style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold)">Need fractional talent?</span>
-        <span style="font-size:13px;font-weight:700;color:var(--dark)">GP Fractional →</span>
-        <span style="font-size:11px;color:var(--muted)">Senior finance experts on demand</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FRACTIONAL TEASER -->
-<section class="fractional-teaser" id="fractional">
-  <div class="frac-pill">✦ Coming June 2026</div>
-  <h3>GP Fractional — Senior Finance Talent, On Demand.</h3>
-  <p>A curated roster of fractional CFOs, financial analysts, and senior accountants — available to your business on a part-time basis, without the full-time cost. Launching June 1st.</p>
-  <a href="mailto:info@goldenpipitrecruiting.com?subject=GP Fractional — Notify Me" class="coming-soon-badge">Notify me when it launches</a>
 </section>
 
 <!-- CTA -->
@@ -479,7 +544,6 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <img src="images/logo.png" alt="Golden Pipit Recruiting"/>
     </div>
     <div class="footer-links">
-      <a href="https://goldenpipitcareers.com">GP Careers →</a>
       <a href="https://gpfractional.com">GP Fractional →</a>
       <a href="mailto:info@goldenpipitrecruiting.com">Email us</a>
       <a href="https://linkedin.com/company/golden-pipit-recruiting/" target="_blank">LinkedIn</a>
