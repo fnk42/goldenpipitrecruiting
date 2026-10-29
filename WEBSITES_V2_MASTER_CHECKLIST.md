@@ -8,12 +8,12 @@ Work through one task at a time. Tick [x] only after the deliverable exists and 
 - [x] 3. Create Recruiting website-v2 development branch and initial brief.
 - [x] 4. Create Careers website-v2 development branch.
 - [x] 5. Agree shared design tokens, navigation, typography, responsive breakpoints and footer links.
-- [ ] 6. Extract and verify real testimonials, client attributions, service descriptions, imagery and consent before reuse.
+- [x] 6. Extract and verify real testimonials, client attributions, service descriptions, imagery and consent before reuse.
 
 ## Phase 2 — Recruiting first
 - [x] 7. Build Recruiting homepage v2 in a new preview file on website-v2, without overwriting index.html.
 - [ ] 8. Review desktop and mobile layout, copy, CTAs and accessibility.
-- [ ] 9. Add role enquiry form and service detail sections.
+- [x] 9. Add role enquiry form and service detail sections.
 - [ ] 10. Review testimonial accuracy and approve Recruiting site for deployment.
 
 ## Phase 3 — Career Services second
